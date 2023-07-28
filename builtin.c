@@ -2,9 +2,9 @@
 
 /**
  * _myexit - exits the shell
- * @info: Structure containing potential args.
- * constant funct prototype.
- * Return: exits with a given stat
+ * @info: Structure containing potential arguments. Used to maintain
+ * constant function prototype.
+ * Return: exits with a given exit status
  * (0) if info.argv[0] != "exit"
  */
 int _myexit(info_t *info)
@@ -30,8 +30,8 @@ int _myexit(info_t *info)
 }
 
 /**
- * _mycd - changes the current dir of the process
- * @info: Structure containing potential args
+ * _mycd - changes the current directory of the process
+ * @info: Structure containing potential arguments. Used to maintain
  * constant function prototype.
  * Return: Always 0
  */
@@ -80,9 +80,9 @@ int _mycd(info_t *info)
 }
 
 /**
- * _myhelp - changes the current dir of process
+ * _myhelp - changes the current directory of the process
  * @info: Structure containing potential arguments. Used to maintain
- * constant funct prototype.
+ * constant function prototype.
  * Return: Always 0
  */
 int _myhelp(info_t *info)

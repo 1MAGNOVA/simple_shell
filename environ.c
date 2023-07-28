@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * _myenv - prints the current environment
- * @info: Struct containing potential args. Used to maintain
- * constant funct prototype.
+ * _myenv - prints the current env
+ * @info: Struct contains potential args. Used to maintain
+ * const funct prototype.
  * Return: Always 0
  */
 int _myenv(info_t *info)
@@ -13,10 +13,9 @@ int _myenv(info_t *info)
 }
 
 /**
- * _getenv - gets the value of an environ var
- * @info: Structure containing potential args. Used to maintain
+ * _getenv - gets the value of an environ variable
+ * @info: Structure containing potential arguments. Used to maintain
  * @name: env var name
- *
  * Return: the value
  */
 char *_getenv(info_t *info, const char *name)
@@ -35,10 +34,10 @@ char *_getenv(info_t *info, const char *name)
 }
 
 /**
- * _mysetenv - Initialize a new env variable,
- *  or modify an existing one
- * @info: Struct containing potential args. Used to maintain
- * constant function prototype.
+ * _mysetenv - Initialize a new environment variable,
+ * or modify an existing one
+ * @info: Struct contains potential args. Used to maintain
+ * const funct prototype.
  *  Return: Always 0
  */
 int _mysetenv(info_t *info)
@@ -54,9 +53,9 @@ int _mysetenv(info_t *info)
 }
 
 /**
- * _myunsetenv - Remove an env var
- * @info: Structure containing potential args. Used to maintain
- * constant funct prototype.
+ * _myunsetenv - Rem an env var
+ * @info: Struct containing potential args. Used to maintain
+ * const funct prototype.
  * Return: Always 0
  */
 int _myunsetenv(info_t *info)
@@ -77,7 +76,7 @@ int _myunsetenv(info_t *info)
 /**
  * populate_env_list - populates env linked list
  * @info: Struct containing potential args. Used to maintain
- * constant funct prototype.
+ * const funct prototype.
  * Return: Always 0
  */
 int populate_env_list(info_t *info)

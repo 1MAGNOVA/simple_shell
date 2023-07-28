@@ -39,7 +39,7 @@ extern char **environ;
 
 /**
  * struct liststr - singly linked list
- * @num: the number field
+ * @num: the num field
  * @str: a string
  * @next: points to the next node
  */
@@ -51,12 +51,12 @@ typedef struct liststr
 } list_t;
 
 /**
- * struct passinfo - contains pseudo-arguements to pass into a function,
- * allowing uniform prototype for function pointer struct
- * @arg: a string generated from getline containing arguements
- * @argv:an array of strings generated from arg
+ * struct passinfo - contains pseudo-args to pass into a functn,
+ * allowing uniform prototype for function pointr struct
+ * @arg: a string generated from getline containing args
+ * @argv:an array of strings generated from args
  * @path: a string path for the current command
- * @argc: the argument count
+ * @argc: the arg count
  * @line_count: the error count
  * @err_num: the error code for exit()s
  * @linecount_flag: if on count this line of input
@@ -67,10 +67,10 @@ typedef struct liststr
  * @alias: the alias node
  * @env_changed: on if environ was changed
  * @status: the return status of the last exec'd command
- * @cmd_buf: address of pointer to cmd_buf, on if chaining
+ * @cmd_buf: address of pointr to cmd_buf, on if chaining
  * @cmd_buf_type: CMD_type ||, &&, ;
- * @readfd: the fd from which to read line input
- * @histcount: the history line number count
+ * @readfd: the fd from which to read_line input
+ * @histcount: the history line num count
  */
 typedef struct passinfo
 {
@@ -96,8 +96,7 @@ typedef struct passinfo
 } info_t;
 
 #define INFO_INIT \
-{NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
-		0, 0, 0}
+{NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \0, 0, 0}
 
 /**
  * struct builtin - contains a builtin string and related function
@@ -231,14 +230,5 @@ void check_chain(info_t *, char *, size_t *, size_t, size_t);
 int replace_alias(info_t *);
 int replace_vars(info_t *);
 int replace_string(char **, char *);
-
-
-
-
-
-
-
-
-
 
 #endif
